@@ -1,7 +1,7 @@
 import qrcode
 
 # URL
-data = "https://horario-quebrada.netlify.app/"
+data = "https://horario-quebrada.netlify.app/?utm_source=qr-code"
 
 # Genera la instancia del código QR
 qr = qrcode.QRCode(
@@ -17,4 +17,4 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 
 # Guardar imagen del código QR
-img.save("generate.png")
+img.save("qr_transporte_quebrada.png")
